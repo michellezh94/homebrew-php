@@ -1,33 +1,33 @@
 <p align="center">
-  <a href="https://github.com/shivammathur/homebrew-php" target="_blank">
+  <a href="https://github.com/michellezhang/homebrew-php" target="_blank">
     <img src="https://repository-images.githubusercontent.com/229187949/f140f880-4c25-11eb-8105-aefec9dc7c66" alt="Homebrew Tap for PHP" width="560">
   </a>
 </p>
 
-<h1 align="center">brew tap shivammathur/php</h1>
+<h1 align="center">brew tap michellezhang/php</h1>
 
 <p align="center">
-  <a href="https://github.com/shivammathur/homebrew-php" title="Homebrew tap to install PHP: Builds">
-    <img alt="Build status" src="https://github.com/shivammathur/homebrew-php/workflows/Update%20and%20Build%20Formulae/badge.svg">
+  <a href="https://github.com/michellezhang/homebrew-php" title="Homebrew tap to install PHP: Builds">
+    <img alt="Build status" src="https://github.com/michellezhang/homebrew-php/workflows/Update%20and%20Build%20Formulae/badge.svg">
   </a>
-  <a href="https://github.com/shivammathur/homebrew-php" title="Homebrew tap to install PHP: Tests">
-    <img alt="Test status" src="https://github.com/shivammathur/homebrew-php/actions/workflows/test.yml/badge.svg">
+  <a href="https://github.com/michellezhang/homebrew-php" title="Homebrew tap to install PHP: Tests">
+    <img alt="Test status" src="https://github.com/michellezhang/homebrew-php/actions/workflows/test.yml/badge.svg">
   </a>
-  <a href="https://github.com/shivammathur/homebrew-php/blob/master/LICENSE" title="license">
+  <a href="https://github.com/michellezhang/homebrew-php/blob/master/LICENSE" title="license">
     <img alt="LICENSE" src="https://img.shields.io/badge/license-MIT-428f7e.svg?logo=open%20source%20initiative&logoColor=white&labelColor=555555">
   </a>
-  <a href="https://github.com/shivammathur/homebrew-php/tree/master/Formula" title="Formulae for PHP versions">
+  <a href="https://github.com/michellezhang/homebrew-php/tree/master/Formula" title="Formulae for PHP versions">
     <img alt="PHP Versions Supported" src="https://img.shields.io/badge/php-5.6%20to%208.5-777bb3.svg?logo=php&logoColor=white&labelColor=555555">
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/shivammathur/homebrew-php#os-support" title="Linux x86_64 supported">
+  <a href="https://github.com/michellezhang/homebrew-php#os-support" title="Linux x86_64 supported">
     <img alt="Linux architectures supported" src="https://img.shields.io/badge/Linux-x86__64%20-f6ab01?logo=linux&logoColor=555555&labelColor=ffffff">
   </a>
-  <a href="https://github.com/shivammathur/homebrew-php#os-support" title="Apple Intel x86_64 supported">
+  <a href="https://github.com/michellezhang/homebrew-php#os-support" title="Apple Intel x86_64 supported">
     <img alt="macOS architectures supported" src="https://img.shields.io/badge/macOS-Intel%20x86__64%20-007DC3?logo=apple&logoColor=555555&labelColor=ffffff">
   </a>  
-  <a href="https://github.com/shivammathur/homebrew-php#os-support" title="Apple M1 arm64 supported">
+  <a href="https://github.com/michellezhang/homebrew-php#os-support" title="Apple M1 arm64 supported">
     <img alt="macOS architectures supported" src="https://img.shields.io/badge/macOS-Apple%20arm64%20-c0476d?logo=apple&logoColor=555555&labelColor=ffffff">
   </a>
 </p>
@@ -94,14 +94,14 @@ sudo yum install -y curl git
 brew update
 ```
 
-- If you have packages from old `homebrew/php` tap, refer to [this guide](https://github.com/shivammathur/homebrew-php/wiki/Cleanup) for removing them.
+- If you have packages from old `homebrew/php` tap, refer to [this guide](https://github.com/michellezhang/homebrew-php/wiki/Cleanup) for removing them.
 
 ### Add this tap
 
 Fetch the formulae in this tap:
 
 ```zsh
-brew tap shivammathur/php
+brew tap michellezhang/php
 ```
 
 ### Install PHP
@@ -111,13 +111,13 @@ brew tap shivammathur/php
 - For example, to install `PHP 8.4`:
 
 ```zsh 
-brew install shivammathur/php/php@8.4
+brew install michellezhang/php/php@8.4
 ```
 
 - After installing you have to link it:
 
 ```zsh
-brew link --overwrite --force shivammathur/php/php@8.4
+brew link --overwrite --force michellezhang/php/php@8.4
 ```
 
 - Restart the terminal and test your PHP version:
@@ -133,7 +133,7 @@ You can upgrade your PHP version to the latest patch release.
 For example, to upgrade `PHP 8.4`:
 
 ```zsh
-brew upgrade shivammathur/php/php@8.4
+brew upgrade michellezhang/php/php@8.4
 ```
 
 ### Switch between PHP versions
@@ -143,7 +143,7 @@ brew upgrade shivammathur/php/php@8.4
 For example, to switch to `PHP 8.4`:
 
 ```zsh
-brew link --overwrite --force shivammathur/php/php@8.4
+brew link --overwrite --force michellezhang/php/php@8.4
 ```
 
 - If you get a warning like below, then do as recommended:
@@ -156,7 +156,7 @@ To relink:
 
 ```zsh
 brew unlink php@8.4
-brew link --overwrite --force shivammathur/php/php@8.4
+brew link --overwrite --force michellezhang/php/php@8.4
 ```
 
 ### Restart your webserver
@@ -191,12 +191,12 @@ sudo chown -R "$(id -un)":"$(id -gn)" $(brew --prefix)
 For example to reinstall `PHP 8.4` and its dependencies:
 
 ```zsh
-brew reinstall $(brew deps shivammathur/php/php@8.4) shivammathur/php/php@8.4
+brew reinstall $(brew deps michellezhang/php/php@8.4) michellezhang/php/php@8.4
 ```
 
 - Check if your issue is a Homebrew's [common issue](https://docs.brew.sh/Common-Issues).
 
-- If you are still facing an issue, please create a discussion thread [here](https://github.com/shivammathur/homebrew-php/discussions).
+- If you are still facing an issue, please create a discussion thread [here](https://github.com/michellezhang/homebrew-php/discussions).
 
 ## License
 
@@ -209,8 +209,8 @@ This project has some [dependencies](#dependencies), and their license can be fo
 ## Contributions
 
 Contributions are welcome!
-Please see [Contributor's Guide](.github/CONTRIBUTING.md "shivammathur/homebrew-php contribution guide") before you start.
-If you face any issues while using this tap or want to suggest a feature/improvement, create an discussion thread [here](https://github.com/shivammathur/homebrew-php/discussions "shivammathur/php discussions").
+Please see [Contributor's Guide](.github/CONTRIBUTING.md "michellezhang/homebrew-php contribution guide") before you start.
+If you face any issues while using this tap or want to suggest a feature/improvement, create an discussion thread [here](https://github.com/michellezhang/homebrew-php/discussions "michellezhang/php discussions").
 
 ## Sponsors
 
@@ -223,14 +223,14 @@ In addition to GitHub Actions, we use [MacStadium](https://www.macstadium.com/op
     <img src="https://setup-php.com/sponsors/macstadium-white.png" alt="Mac Stadium" width="200px">
 </a>
 
-This project is generously supported by many other users and organisations via [GitHub Sponsors](https://github.com/sponsors/shivammathur).
+This project is generously supported by many other users and organisations via [GitHub Sponsors](https://github.com/sponsors/michellezhang).
 
-<a href="https://github.com/sponsors/shivammathur"><img src="https://setup-php.com/sponsors.svg?" alt="Sponsor shivammathur"></a>
+<a href="https://github.com/sponsors/michellezhang"><img src="https://setup-php.com/sponsors.svg?" alt="Sponsor michellezhang"></a>
 
 ## Related Projects
 
-- [shivammathur/homebrew-extensions](https://github.com/shivammathur/homebrew-extensions "Tap for PHP extensions")
-- [shivammathur/setup-php](https://github.com/shivammathur/setup-php "Setup PHP in GitHub Actions")
+- [michellezhang/homebrew-extensions](https://github.com/michellezhang/homebrew-extensions "Tap for PHP extensions")
+- [michellezhang/setup-php](https://github.com/michellezhang/setup-php "Setup PHP in GitHub Actions")
 
 ## Dependencies
 
